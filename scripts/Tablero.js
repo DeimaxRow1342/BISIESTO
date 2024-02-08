@@ -15,7 +15,7 @@ export class Tablero {
           ];
           
         this.ciudad_paises = [
-            'BOLIVIA','BRAZIL','ARGENTINA', 'COLOMBIA', 'VENEZUELA', 'MEXICO', 'HONDURAS', 'ECUADOR', 'ALEMANIA', 'PARIS'
+            'BOLIVIA','BRAZIL','ARGENTINA', 'COLOMBIA', 'VENEZUELA', 'MEXICO', 'HONDURAS', 'ECUADOR', 'ALEMANIA', 'PARIS', 'CHINA', 'URUGUAY', 'CANADA'
           ];
           
         this.canciones = [
@@ -32,7 +32,10 @@ export class Tablero {
             'En el corazón de Centroamérica',
             'Donde nace la línea ecuatorial',
             'Famoso por su ingeniería y cerveza',
-            'La Ciudad del Amor'
+            'La Ciudad del Amor',
+            'País asiático más poblado',
+            'Montevideo y Punta del Este',
+            'Gran país norteamericano, diverso'
           ];
           
           this.pistafamosos = [
