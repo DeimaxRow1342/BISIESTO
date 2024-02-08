@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FUENTE DE LETRA-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <!--CONEXION CON .CSS-->
+    <link rel="stylesheet" href="Style_Teclado.css">
+    <!--CONEXION CON .JS-->
+    <script type="module">
+        import { IO } from '../scripts/IO.js';
+        const io = new IO();
+
+        //SELECCION DE LETRA
+        const btnComprobar = document.getElementById("btnComprobar");
+
+        btnComprobar.addEventListener("click", function() {
+            const letraIngresada = document.getElementById("letraIngresada").value;
+            io.juego.comprobarLetra(letraIngresada);
+            io.actualizarHTML();
+        });
+
+        //SELECCION DE PALABRA
+        const btnComprobarPalabra = document.getElementById("btnComprobarPalabra");
+
+        btnComprobarPalabra.addEventListener("click", function() {
+            const PalabraIngresada = document.getElementById("PalabraIngresada").value;
+            io.juego.comprobarPalabra(PalabraIngresada);
+            io.actualizarHTML();
+        });
+
+    </script>
+    <!--TITULO-->
+    <title>Ahorcado</title>
+</head>
+<body>
+    <header class="Portada">
+        <br>
+        <center><h1>ENCUENTRE LA PALABRA ANTES DE COMPLETAR EL PERSONAJE</h1></center>
+        <br>
+        <div class="Juego">
+            <img id="imagenAhorcado" src="../Imagenes/Secuencia muñequito/img1.png" alt="Ahorcado"/>
+            
+            
+
+            <div class="cuadro">
+
+                <center><h1 id="Categoria">Categoria</h1></center>
+
+                <center>
+                    <h2>Palabra Secreta:</h2>
+                    <div id="palabraSecreta">_ _ _ _ _</div>
+                </center>
+                <br>
+                <div class="textareaLetra"> <!--SOLO UNA LETRA-->
+                    <h2>Ingresa una Letra:</h2>
+                    <input type="text" id="letraIngresada" maxlength="1" class="textoCuadrado">
+                    <button class="BTNComprobar" id="btnComprobar">Comprobar</button>
+                </div>
+                <br>
+                <div class="textareaPalabra">
+                    <h2>Ingresa solo una Palabra:</h2>
+                    <input type="text" id="PalabraIngresada" maxlength="30" class="textoCuadrado">
+                    <button class="BTNComprobar" id="btnComprobarPalabra">Comprobar</button>
+                </div>
+                <br>
+                <div> 
+                    <h2>Pista: <span id="Pista">Aqui hay una pista</span></h2>
+                </div>
+                <br>
+                <div>
+                    <center><h2>Intentos restantes: <span id="intentosRestantes">5</span><img id="iconoVidas" src="../Imagenes/vidas.png" alt="Vidas"> </h2></center>
+                </div>
+                <br>
+                
+                <div class="cVocales" id="contVocales">
+                    <h2>Vocales Usadas (Max. 2): <span id="letrasRestantes">0</span></h2>
+                    <div id="vocalesUsadas"></div>
+                </div>
+
+                <div class="cLetras" id="contLetras">
+                    <h2>Letras Usadas:</h2>
+                    <div id="letrasUsadas"></div>
+                </div>
+
+                <div class="Final">
+                    <h3><span id="mensaje"></span></h3>
+                    <p>La palabra era: </p> 
+                    <span id="Palabra"></span>
+                    <br>
+                    <a href="../Páginas/Principio.html" style="display: none;" id="btnPerder"><button class="btnPerder">VOLVER A JUGAR</button></a>
+                    <a href="../Páginas/Principio.html" style="display: none;" id="btnGanar"><button class="btnGanar">VOLVER A JUGAR</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

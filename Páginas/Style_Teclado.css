@@ -1,0 +1,168 @@
+*{
+    padding: 0; 
+    margin:0; 
+    font-family: 'VT323', monospace; 
+    box-sizing: border-box;
+}
+
+/*----IMAGEN DE FONDO-----------*/
+.Portada{
+    background-image: url(../Imagenes/fondo2.png);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh; 
+}
+
+/*----BOTON REINICIAR-----------*/
+.btnPerder {
+    background-color: black; 
+    color: white;
+    font-size: 30px; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    margin: 15px; 
+}
+
+.btnPerder:hover {
+    background-image: url(../Imagenes/btnAtras.png); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    color: rgba(255, 255, 255, 0.5); 
+}
+
+.btnGanar {
+    background-color: #FCD24F;
+    color: white; 
+    font-size: 30px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    margin: 15px; 
+}
+
+.btnGanar:hover {
+    background-image: url(../Imagenes/btnWin.png); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: rgba(255, 255, 255, 0.5); 
+}
+
+/*----TITULO-----------*/
+h1 {
+    font-size: 40px;
+    color:white;
+    animation: growAndShrink 2s ease-in-out infinite; 
+}
+
+@keyframes growAndShrink {
+    0%, 100% {
+        font-size: 40px; 
+    }
+    50% {
+        font-size: 45px; 
+    }
+}
+
+/*----CONTENIDO DEL JUEGO-----------*/
+.Juego {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+/*----IMAGEN-----------*/
+#imagenAhorcado {
+    width: 350px; 
+    margin-right: 50px; 
+    border:5px solid white;
+}
+
+/*----CUADRO-----------*/
+.cuadro {
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+}
+
+h2 {
+    font-size: 20px; 
+    margin-bottom: 10px; 
+}
+
+.textareaLetra {
+    display: flex; 
+}
+
+.textareaPalabra {
+    display: flex; 
+}
+
+.textoCuadrado{
+    font-size: 18px;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+}
+
+#letraIngresada {
+    flex: 1; 
+    margin-right: 10px; 
+}
+
+#btn_clase {
+    background-color: black; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 20px; 
+    padding: 7px 14px; 
+}
+
+.BTNComprobar{
+    background-color: #197BBD; 
+    color: white;
+    font-size: 18px; 
+    padding: 5px 5px; 
+    border: none; 
+    cursor: pointer; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    margin: 5px; 
+}
+
+/*----FINAL-----------*/
+.Final{
+    display: none;
+    background-color: #6EBEF4; 
+    color: white;
+    font-size: 18px; 
+    border-radius: 5px;
+    padding: 5px; 
+    text-align: center;
+    margin: 5px auto; 
+    max-width: 400px; 
+}
+
+h3 {
+    font-size: 40px;
+    color:rgb(255, 234, 0);
+}
+
+#iconoVidas {
+    width: 14px;
+    height: auto;
+}
+
+h1 {
+    color: black;
+}

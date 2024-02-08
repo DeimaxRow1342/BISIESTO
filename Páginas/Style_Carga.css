@@ -1,0 +1,12 @@
+.Portada{
+    background-image: url(../Imagenes/Ahorcado.gif);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 97vh; 
+    text-align:center; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}

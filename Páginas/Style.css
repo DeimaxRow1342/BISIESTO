@@ -1,0 +1,62 @@
+*{
+    padding: 0; 
+    margin:0; 
+    font-family: 'VT323', monospace; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*----PORTADA----------------------*/
+.Portada{
+    background-image: url(../Imagenes/fondo.gif);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 100vh; 
+    text-align:center; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/*----CUADRO----------------------*/
+.cuadro {
+    display: flex;
+    background-color: white;
+    padding: 15px; 
+    border-radius: 10px; 
+}
+
+.Texto {
+    margin: 0px 15px;
+    text-align: center;
+}
+
+form p {
+    font-size: 25px; 
+    color: black;
+}
+
+select {
+    width: 100%; 
+    padding: 5px; 
+    font-size: 19px; 
+    border-radius: 5px; 
+}
+
+/*----BOTON INCIAR----------------------*/
+button {
+    background-color: #f77722; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 40px; 
+}
+
+button:hover {
+    background-color: #9e4306; 
+}
