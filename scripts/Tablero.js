@@ -11,7 +11,7 @@ if (nivelDificultadRecuperado) {
 export class Tablero {
     constructor() {
         this.famosos = [
-            'CHAYANNE','ZENDAYA','ADELE', 'SHAKIRA', 'MADONNA', 'BEYONCE', 'RIHANNA', 'MALUMA', 'PITBULL', 'THALIA'
+            'CHAYANNE','ZENDAYA','ADELE', 'SHAKIRA', 'MADONNA', 'BEYONCE', 'RIHANNA', 'MALUMA', 'PITBULL', 'THALIA', 'MARADONA', 'JUANES'
           ];
           
         this.ciudad_paises = [
@@ -48,7 +48,9 @@ export class Tablero {
             'De Barbados con amor',
             'El Pretty Boy de Colombia',
             'Dale!',
-            'La Reina de las telenovelas'
+            'La Reina de las telenovelas',
+            'La "Mano de Dios"',
+            'Éxitos como La Camisa Negra'
           ];
           
           this.pistascanciones = [
